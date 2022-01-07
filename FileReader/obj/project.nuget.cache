@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EL052RmFIyXpk8eHMax5Vqo3w1SJyH0y65eNRD0r0x1TKC1Z/sJAWFKCHJg6w+Vuz99iUcE3sr+PmlSSWWbv/A==",
+  "dgSpecHash": "w0Y9+EFDREr1IJevrY/3018wa2ZyucwvtXAMnFhwO3yNobFFv25NJoAN/BqaDBQwM6t7ExHJ8fLCb0PBsP1GQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\filereader\\FileReader.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\FileReader\\FileReader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",

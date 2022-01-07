@@ -136,7 +136,7 @@ namespace FileReader.DbfReader
 
             GenerateFinalExcel();
 
-            GenerateLfsExcel();
+            GenerateSummaryExcel();
 
         }
 

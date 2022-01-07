@@ -6,7 +6,7 @@ namespace FileReader.Job
     {
         public DbfRegistry()
         {
-            Schedule(() => new DbfJob()).ToRunEvery(15).Seconds();
+            Schedule(() => new DbfJob()).ToRunOnceIn(10).Seconds();
         }
     }
 }
