@@ -6,7 +6,7 @@ namespace FileReader.Job
     {
         public void Execute()
         {
-            DbfReader.DbfReader.ReadUserInput();
+            DbfReader.DbfReader.RunJob();
         }
     }
 }
