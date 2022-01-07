@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\FileReader\\FileReader.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\filereader\\FileReader.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\FileReader\\FileReader.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\filereader\\FileReader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\FileReader\\FileReader.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\filereader\\FileReader.csproj",
         "projectName": "FileReader",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\FileReader\\FileReader.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\filereader\\FileReader.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\FileReader\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\FileReaderVs\\FileReaderVs\\filereader\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
