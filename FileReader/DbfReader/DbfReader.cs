@@ -18,7 +18,7 @@ namespace FileReader.DbfReader
         //private static  DateTime Day =
          //new DateTime(DateTime.Now.Year , DateTime.Now.Month , DateTime.Now.Day , 7 , 0 , 0).AddDays(-1);
 
-        private static readonly DateTime Day = new DateTime(2021, 12, 31, 7, 0, 0);
+        private static readonly DateTime Day = new DateTime(2022, 1, 6, 7, 0, 0);
         private static readonly IConfiguration Configuration = AppConfiguration.ReadConfigurationFromAppSettings();
         #region Private Methods
 
@@ -129,8 +129,8 @@ namespace FileReader.DbfReader
             LocalStorageService.DownLoadNoCredentials(Configuration["DownloadPaths:AUFTRAGA"], Configuration["StoragePaths:UploadPath"], "AUFTRAGA");
             LocalStorageService.DownLoadNoCredentials(Configuration["DownloadPaths:AUFTRAGB"], Configuration["StoragePaths:UploadPath"], "AUFTRAGB");
             LocalStorageService.DownLoadNoCredentials(Configuration["DownloadPaths:AUFTRAGC"], Configuration["StoragePaths:UploadPath"], "AUFTRAGC");
-            LocalStorageService.DownLoadNoCredentials(Configuration["DownloadPaths:RBUCH"], Configuration["StoragePaths:UploadPath"], "RBUCH");
-            LocalStorageService.DownLoadNoCredentials(Configuration["DownloadPaths:LFS"], Configuration["StoragePaths:UploadPath"], "LFS");
+            //LocalStorageService.DownLoadNoCredentials(Configuration["DownloadPaths:RBUCH"], Configuration["StoragePaths:UploadPath"], "RBUCH");
+            //LocalStorageService.DownLoadNoCredentials(Configuration["DownloadPaths:LFS"], Configuration["StoragePaths:UploadPath"], "LFS");
         }
 
 
