@@ -111,6 +111,7 @@ namespace FileReader.DbfReader
                 case "10":
                     {
                         DownLoadFilesAsync();
+                        ReadUserInput();
                         break;
                     }
                 case "11":
