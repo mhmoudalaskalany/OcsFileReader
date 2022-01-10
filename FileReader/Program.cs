@@ -24,15 +24,15 @@ namespace FileReader
            
             try
             {
+                System.Console.WriteLine("Welcome To Dpf Reader");
                 //DbfReader.DbfReader.ReadUserInput();
-                Console.CancelKeyPress += (sender, eArgs) => {
-                   _quitEvent.Set();
-                   eArgs.Cancel = true;
-                };
-                JobManager.Initialize(new DbfRegistry());
-                // kick off asynchronous stuff 
-
-                _quitEvent.WaitOne();
+                DbfReader.DbfReader.RunJob();
+                // Console.CancelKeyPress += (sender, eArgs) => {
+                //    _quitEvent.Set();
+                //    eArgs.Cancel = true;
+                // };
+                // JobManager.Initialize(new DbfRegistry());
+                // _quitEvent.WaitOne();
 
             }
             catch (Exception e)
