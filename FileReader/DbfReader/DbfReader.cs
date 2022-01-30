@@ -127,7 +127,7 @@ namespace FileReader.DbfReader
             DownLoadFilesAsync();
 
             System.Console.WriteLine("Reading A");
-            _options = new Options("AUFTRAGA", "AUFTRAGA");
+             _options = new Options("AUFTRAGA", "AUFTRAGA");
             DbfFileDataReader.RunAndReturnExitCode(_options);
 
             System.Console.WriteLine("Reading B");
