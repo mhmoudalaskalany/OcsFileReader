@@ -15,10 +15,10 @@ namespace FileReader.DbfReader
     public class DbfReader
     {
         private static Options _options;
-        private static DateTime Day =
-        new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0).AddDays(-1);
+        // private static DateTime Day =
+        // new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0).AddDays(-1);
 
-        //private static readonly DateTime Day = new DateTime(2022, 1, 7, 7, 0, 0);
+        private static readonly DateTime Day = new DateTime(2022, 1, 30, 7, 0, 0);
         private static readonly IConfiguration Configuration = AppConfiguration.ReadConfigurationFromAppSettings();
         #region Private Methods
 
@@ -267,6 +267,7 @@ namespace FileReader.DbfReader
                 var content = stream.ToArray();
                 var path = Configuration["StoragePaths:Plc"];
                 string dayStr = "";
+                string monthStr = "";
                 if (day.Day < 10)
                 {
                     dayStr = "0" + (day.Day);
@@ -275,7 +276,15 @@ namespace FileReader.DbfReader
                 {
                     dayStr = (day.Day).ToString();
                 }
-                LocalStorageService.StoreBytes(content, path, $"PrdHdr_{day.Year}{day.Month}{dayStr}", "xlsx");
+                if (day.Month < 10)
+                {
+                    monthStr = "0" + (day.Month);
+                }
+                else
+                {
+                    monthStr = (day.Month).ToString();
+                }
+                LocalStorageService.StoreBytes(content, path, $"PrdHdr_{day.Year}{monthStr}{dayStr}", "xlsx");
 
             }
         }
@@ -411,6 +420,7 @@ namespace FileReader.DbfReader
 
                 var path = Configuration["StoragePaths:Plc"];
                 string dayStr = "";
+                string monthStr = "";
                 if (day.Day < 10)
                 {
                     dayStr = "0" + (day.Day);
@@ -419,7 +429,15 @@ namespace FileReader.DbfReader
                 {
                     dayStr = (day.Day).ToString();
                 }
-                LocalStorageService.StoreBytes(content, path, $"PrdDtl_{day.Year}{day.Month}{dayStr}", "xlsx");
+                if (day.Month < 10)
+                {
+                    monthStr = "0" + (day.Month);
+                }
+                else
+                {
+                    monthStr = (day.Month).ToString();
+                }
+                LocalStorageService.StoreBytes(content, path, $"PrdDtl_{day.Year}{monthStr}{dayStr}", "xlsx");
 
 
                 // bool exists = Directory.Exists(path);
