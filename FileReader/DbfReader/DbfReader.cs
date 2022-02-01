@@ -15,10 +15,10 @@ namespace FileReader.DbfReader
     public class DbfReader
     {
         private static Options _options;
-        // private static DateTime Day =
-        // new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0).AddDays(-1);
+         private static DateTime Day =
+         new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0).AddDays(-1);
 
-        private static readonly DateTime Day = new DateTime(2022, 1, 30, 7, 0, 0);
+        //private static readonly DateTime Day = new DateTime(2022, 1, 30, 7, 0, 0);
         private static readonly IConfiguration Configuration = AppConfiguration.ReadConfigurationFromAppSettings();
         #region Private Methods
 
