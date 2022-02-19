@@ -18,7 +18,7 @@ namespace FileReader.DbfReader
          private static DateTime Day =
          new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0).AddDays(-1);
 
-        //private static readonly DateTime Day = new DateTime(2022, 1, 30, 7, 0, 0);
+        //private static readonly DateTime Day = new DateTime(2022, 2, 18, 7, 0, 0);
         private static readonly IConfiguration Configuration = AppConfiguration.ReadConfigurationFromAppSettings();
         #region Private Methods
 
